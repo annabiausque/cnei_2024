@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congrès National des Élèves Ingénieur·es</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Charger Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialiser Swiper après que la page soit chargée -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const swiper = new Swiper('.swiper-container', {
+                    loop: true, // Pour faire un carrousel infini
+                    autoplay: {
+                        delay: 5000, // Défilement automatique toutes les 5 secondes
+                        disableOnInteraction: false, // Continue même après une interaction
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    spaceBetween: 30, // Espacement entre les slides
+                });
+            });
+        </script>
+    <header>
+        <div class="logo-container">
+            <img src="static/congres_logo.png" alt="Logo Congrès" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Congrès National des Élèves Ingénieur·es 2024</h1>
+            <p>15-17 Novembre 2024 - ENPC</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#programme">Programme</a></li>
+            <li><a href="#infos">Informations Pratiques</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#carrousel-section">Nos partenaires</a></li>
+        </ul>
+    </nav>
+
+    <section class="flex-container">
+        <section id="programme">
+            <h2>Programme de l'événement</h2>
+            <p>Vendredi 15 novembre : Arrivées à partir de 18h à l'hôtel</p>
+            <p>Samedi 16 novembre : Journée complète de conférences, ateliers, et forum d'entreprises</p>
+            <p>Dimanche 17 novembre : Ateliers de développement personnel et sportif</p>
+        </section>
+
+        <section id="billetterie">
+            <iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/bureau-national-des-eleves-ingenieurs/evenements/congres-national-des-eleves-ingenieurs/widget-vignette" style="width: 350px; height: 450px; border: none;"></iframe>
+        </section>
+    </section>
+
+    <section id="infos">
+        <h2>Informations Pratiques</h2>
+        <ul>
+            <li>Date : 15-17 Novembre 2024</li>
+            <li>Lieu : École nationale des ponts et chaussées, Paris (RER A)</li>
+            <li>Hébergement : Possibilité d'hébergement à l'hôtel</li>
+            <li>Afterwork : Samedi 16 novembre à partir de 20h</li>
+        </ul>
+    </section>
+
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <p>Axelle Guillemot - Responsable Partenariats</p>
+        <p>Email : partenariats@bnei.fr | Téléphone : 06 87 51 84 77</p>
+        <p>Anna Biausque - Présidente BNEI</p>
+        <p>Email : presidence@bnei.fr | Téléphone : 07 84 87 86 25</p>
+    </section>
+
+    <section id="carrousel-section">
+        <h2>Nos Partenaires</h2>
+        <!-- Container principal Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Chaque image doit être un slide -->
+                <div class="swiper-slide">
+                    <img src="static/cnei.png" alt="Partenaire 1" class="carousel-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/cnei.png" alt="Partenaire 2" class="carousel-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/cnei.png" alt="Partenaire 3" class="carousel-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/cnei.png" alt="Partenaire 4" class="carousel-image">
+                </div>
+            </div>
+
+            <!-- Boutons de navigation Swiper -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination Swiper -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Congrès National des Élèves Ingénieur·es</p>
+    </footer>
+
+</body>
+</html>
