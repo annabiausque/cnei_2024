@@ -11,25 +11,24 @@ header {
     color: white;
     padding: 1.5rem;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    justify-content: flex-start; /* Aligner le logo et le texte sur la même ligne */
+    align-items: center; /* Centre verticalement le contenu sur une même ligne */
     padding-left: 20px;
 }
-
 
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start; 
 }
 
 .logo {
-    height: 180px; 
-    margin-right: 50px;
+    height: 100px; 
+    margin-right: 20px;
 }
 
 .header-text {
-    flex-grow: 1; 
-    text-align: right; 
+    text-align: left; 
 }
 
 header h1 {
@@ -39,6 +38,7 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
+    margin: 0;
 }
 
 nav {
@@ -52,6 +52,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
 }
 
 nav ul li {
@@ -93,12 +94,11 @@ footer p {
     margin: 0;
 }
 
-
 .fixed-background {
-    background-image: url('your-background-image.jpg'); 
+    background-image: url('your-background-image.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -108,7 +108,7 @@ footer p {
 }
 
 .fixed-background .content {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 10px;
 }
@@ -128,33 +128,28 @@ footer p {
     border-radius: 8px;
 }
 
-
 #programme {
-    flex: 1; 
+    flex: 1;
 }
-
 
 #billetterie {
-    flex-basis: 400px; 
+    flex-basis: 400px;
 }
 
-/* Style de la section du carrousel */
 #carrousel-section {
     text-align: center;
     margin: 50px 0;
 }
 
-/* Swiper Container */
 .swiper-container {
     width: 80%;
     height: 400px;
     margin: 0 auto;
-    position: relative; /* Important pour positionner les flèches */
-    overflow: hidden; /* Pour que les flèches restent à l'intérieur du conteneur */
-
+    position: relative;
+    overflow: hidden;
 }
 
-/* Swiper Slides */
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -167,15 +162,11 @@ footer p {
     object-fit: contain;
 }
 
-/* Pagination et boutons de navigation */
 .swiper-pagination {
     bottom: 10px;
 }
 
-
-/* Positionnement des flèches */
 .swiper-button-next, .swiper-button-prev {
-
     width: 40px;
     height: 40px;
     position: absolute;
@@ -188,17 +179,91 @@ footer p {
     align-items: center;
 }
 
-/* Flèche de droite (next) */
 .swiper-button-next {
-    right: 10px; /* Décalage depuis la droite */
+    right: 10px;
 }
 
-/* Flèche de gauche (prev) */
 .swiper-button-prev {
-    left: 10px; /* Décalage depuis la gauche */
+    left: 10px;
 }
 
-/* Pagination Swiper */
 .swiper-pagination {
     bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .logo {
+        height: 120px; 
+    }
+
+    .header-text {
+        text-align: center; 
+        margin-top: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #billetterie {
+        width: 100%; 
+        flex-basis: auto;
+    }
+
+    .swiper-container {
+        height: 300px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; 
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        height: 100px;
+        margin-right: 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem; 
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .fixed-background {
+        height: 200px; 
+    }
+
+    #billetterie {
+        width: 100%;
+    }
+
+    .swiper-container {
+        height: 200px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
 }
