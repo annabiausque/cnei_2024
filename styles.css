@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #21a1f9;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 180px; 
+    margin-right: 50px;
+}
+
+.header-text {
+    flex-grow: 1; 
+    text-align: right; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #21a1f9;
+}
+
+section {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #004080;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.fixed-background {
+    background-image: url('your-background-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.fixed-background .content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 20px;
+}
+
+#programme, #billetterie {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+
+#programme {
+    flex: 1; 
+}
+
+
+#billetterie {
+    flex-basis: 400px; 
+}
+
+/* Style de la section du carrousel */
+#carrousel-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative; /* Important pour positionner les flèches */
+    overflow: hidden; /* Pour que les flèches restent à l'intérieur du conteneur */
+
+}
+
+/* Swiper Slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Pagination et boutons de navigation */
+.swiper-pagination {
+    bottom: 10px;
+}
+
+
+/* Positionnement des flèches */
+.swiper-button-next, .swiper-button-prev {
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flèche de droite (next) */
+.swiper-button-next {
+    right: 10px; /* Décalage depuis la droite */
+}
+
+/* Flèche de gauche (prev) */
+.swiper-button-prev {
+    left: 10px; /* Décalage depuis la gauche */
+}
+
+/* Pagination Swiper */
+.swiper-pagination {
+    bottom: 10px;
+}
