@@ -11,8 +11,8 @@ header {
     color: white;
     padding: 1.5rem;
     display: flex;
-    justify-content: flex-start; /* Aligner le logo et le texte sur la même ligne */
-    align-items: center; /* Centre verticalement le contenu sur une même ligne */
+    justify-content: flex-start; 
+    align-items: center; 
     padding-left: 20px;
 }
 
@@ -94,25 +94,6 @@ footer p {
     margin: 0;
 }
 
-.fixed-background {
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.fixed-background .content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
-}
-
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -191,40 +172,6 @@ footer p {
     bottom: 10px;
 }
 
-
-@media (max-width: 900px) {
-    .logo {
-        height: 120px; 
-    }
-
-    .header-text {
-        text-align: center; 
-        margin-top: 10px;
-    }
-
-    .flex-container {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    #billetterie {
-        width: 100%; 
-        flex-basis: auto;
-    }
-
-    .swiper-container {
-        height: 300px; 
-    }
-
-    nav ul {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0; 
-    }
-}
 
 @media (max-width: 600px) {
     .logo {
