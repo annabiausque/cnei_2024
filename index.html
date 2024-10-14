@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <!-- Charger Swiper.js -->
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- Initialiser Swiper après que la page soit chargée -->
+     
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const swiper = new Swiper('.swiper-container', {
-                    loop: true, // Pour faire un carrousel infini
+                    loop: true, 
                     autoplay: {
-                        delay: 5000, // Défilement automatique toutes les 5 secondes
-                        disableOnInteraction: false, // Continue même après une interaction
+                        delay: 5000, 
+                        disableOnInteraction: false, 
                     },
                     navigation: {
                         nextEl: '.swiper-button-next',
@@ -27,7 +27,7 @@
                         el: '.swiper-pagination',
                         clickable: true,
                     },
-                    spaceBetween: 30, // Espacement entre les slides
+                    spaceBetween: 30, 
                 });
             });
         </script>
@@ -83,10 +83,10 @@
 
     <section id="carrousel-section">
         <h2>Nos Partenaires</h2>
-        <!-- Container principal Swiper -->
+    
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!-- Chaque image doit être un slide -->
+       
                 <div class="swiper-slide">
                     <img src="static/cnei.png" alt="Partenaire 1" class="carousel-image">
                 </div>
@@ -101,11 +101,11 @@
                 </div>
             </div>
 
-            <!-- Boutons de navigation Swiper -->
+      
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
 
-            <!-- Pagination Swiper -->
+   
             <div class="swiper-pagination"></div>
         </div>
     </section>
